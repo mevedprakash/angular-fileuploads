@@ -68,3 +68,4 @@
 /home/ved/codewithved/image-upload/dotnetapi/obj/Debug/net8.0/TodoApi.pdb
 /home/ved/codewithved/image-upload/dotnetapi/obj/Debug/net8.0/TodoApi.genruntimeconfig.cache
 /home/ved/codewithved/image-upload/dotnetapi/obj/Debug/net8.0/ref/TodoApi.dll
+/home/ved/codewithved/image-upload/dotnetapi/obj/Debug/net8.0/TodoApi.sourcelink.json

@@ -4,21 +4,21 @@ namespace TodoApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class HomeController : ControllerBase
+public class FileController : ControllerBase
 {
 
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<FileController> _logger;
     private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostingEnvironment;
 
-    public HomeController(ILogger<HomeController> logger,
+    public FileController(ILogger<FileController> logger,
     Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
     {
         _logger = logger;
         _hostingEnvironment = hostingEnvironment;
     }
 
-    [HttpPost]
-    public async Task<ActionResult> Get([FromForm] List<IFormFile> files)
+    [HttpPost("upload")]
+    public ActionResult Upload([FromForm] List<IFormFile> files)
     {
 
         string FilePath = _hostingEnvironment.ContentRootPath + "/files";

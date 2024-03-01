@@ -1,0 +1,16 @@
+<div class="w-screen h-screen flex justify-center items-center p-20">
+  <div class="w-full shadow border h-4/6 bg-white">
+    <div class="flex gap-5 p-8">
+      <input type="file" name="image" (change)="onFileChange($event)" />
+      @if(filePreview){
+      <img [src]="filePreview" width="100" height="100" alt="" />
+      }
+      <button
+        class="p-2 w-32 h-10 text-white bg-blue-600 shadow-md border rounded"
+        (click)="upload()"
+      >
+        Upload
+      </button>
+    </div>
+  </div>
+</div>
